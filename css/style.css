@@ -11,12 +11,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: #894b1e;
+  background-color: #5f381b;
 }
 
 body {
   font-size: 1.6rem;
-  line-height: 1.75;
+  line-height: 1.9;
   color: #333;
   background-color: #fff;
   margin: 0 auto;
@@ -109,8 +109,11 @@ main{
 .contents{
   width: 480px;
   position: relative;
-  background: rgb(192 0 0 / 50%);
+  background: rgb(192 0 0 / 35%);
   filter: drop-shadow(2px 4px 6px #333);
+  z-index: 0;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
 }
 
 .hero {
@@ -118,7 +121,7 @@ main{
 }
 .hero h1{
   text-align: left;
-  font-size: 4rem;
+  font-size: clamp(2.2rem, 6.8vw, 3.4rem);
   line-height: 1.5;
   color: #eee;
   font-family: serif;
@@ -146,15 +149,14 @@ ul {
 
 
 .menu ul{
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #43210d;
+  background-color: #261717;
   color: #eee;
-  margin-top: 2em;
   font-size: small;
   width: 100%;
 }
